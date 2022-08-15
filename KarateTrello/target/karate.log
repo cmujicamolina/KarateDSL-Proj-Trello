@@ -1,0 +1,601 @@
+16:14:13.686 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:14:14.101 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+16:14:14.101 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+16:14:14.234 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:14:14.235 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 160
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+16:14:14.449 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 213
+1 < 200
+1 < Date: Mon, 15 Aug 2022 21:14:14 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 999
+1 < X-Ratelimit-Reset: 1656073257
+1 < Vary: Origin, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: max-age=43200
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: HIT
+1 < Age: 8673
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=OKZ6UcAxpBCURw9xnEkvNAhZrn0S9RQueHh8Ibhn%2FbXZjC57644W4hnwTBdCQKCWc0v5D%2FyP7mVE4ipcFxJynvszw3O4msDAT1c%2BcRJVdVKLkWUmlCDJflh1rt29AAL58MAoWO9KDylGiGkP5ULz"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 73b4f050bfe756a7-LIM
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+[
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "zipcode": "92998-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Ervin Howell",
+    "username": "Antonette",
+    "email": "Shanna@melissa.tv",
+    "address": {
+      "street": "Victor Plains",
+      "suite": "Suite 879",
+      "city": "Wisokyburgh",
+      "zipcode": "90566-7771",
+      "geo": {
+        "lat": "-43.9509",
+        "lng": "-34.4618"
+      }
+    },
+    "phone": "010-692-6593 x09125",
+    "website": "anastasia.net",
+    "company": {
+      "name": "Deckow-Crist",
+      "catchPhrase": "Proactive didactic contingency",
+      "bs": "synergize scalable supply-chains"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Clementine Bauch",
+    "username": "Samantha",
+    "email": "Nathan@yesenia.net",
+    "address": {
+      "street": "Douglas Extension",
+      "suite": "Suite 847",
+      "city": "McKenziehaven",
+      "zipcode": "59590-4157",
+      "geo": {
+        "lat": "-68.6102",
+        "lng": "-47.0653"
+      }
+    },
+    "phone": "1-463-123-4447",
+    "website": "ramiro.info",
+    "company": {
+      "name": "Romaguera-Jacobson",
+      "catchPhrase": "Face to face bifurcated interface",
+      "bs": "e-enable strategic applications"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Patricia Lebsack",
+    "username": "Karianne",
+    "email": "Julianne.OConner@kory.org",
+    "address": {
+      "street": "Hoeger Mall",
+      "suite": "Apt. 692",
+      "city": "South Elvis",
+      "zipcode": "53919-4257",
+      "geo": {
+        "lat": "29.4572",
+        "lng": "-164.2990"
+      }
+    },
+    "phone": "493-170-9623 x156",
+    "website": "kale.biz",
+    "company": {
+      "name": "Robel-Corkery",
+      "catchPhrase": "Multi-tiered zero tolerance productivity",
+      "bs": "transition cutting-edge web services"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Chelsey Dietrich",
+    "username": "Kamren",
+    "email": "Lucio_Hettinger@annie.ca",
+    "address": {
+      "street": "Skiles Walks",
+      "suite": "Suite 351",
+      "city": "Roscoeview",
+      "zipcode": "33263",
+      "geo": {
+        "lat": "-31.8129",
+        "lng": "62.5342"
+      }
+    },
+    "phone": "(254)954-1289",
+    "website": "demarco.info",
+    "company": {
+      "name": "Keebler LLC",
+      "catchPhrase": "User-centric fault-tolerant solution",
+      "bs": "revolutionize end-to-end systems"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Mrs. Dennis Schulist",
+    "username": "Leopoldo_Corkery",
+    "email": "Karley_Dach@jasper.info",
+    "address": {
+      "street": "Norberto Crossing",
+      "suite": "Apt. 950",
+      "city": "South Christy",
+      "zipcode": "23505-1337",
+      "geo": {
+        "lat": "-71.4197",
+        "lng": "71.7478"
+      }
+    },
+    "phone": "1-477-935-8478 x6430",
+    "website": "ola.org",
+    "company": {
+      "name": "Considine-Lockman",
+      "catchPhrase": "Synchronised bottom-line interface",
+      "bs": "e-enable innovative applications"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Kurtis Weissnat",
+    "username": "Elwyn.Skiles",
+    "email": "Telly.Hoeger@billy.biz",
+    "address": {
+      "street": "Rex Trail",
+      "suite": "Suite 280",
+      "city": "Howemouth",
+      "zipcode": "58804-1099",
+      "geo": {
+        "lat": "24.8918",
+        "lng": "21.8984"
+      }
+    },
+    "phone": "210.067.6132",
+    "website": "elvis.io",
+    "company": {
+      "name": "Johns Group",
+      "catchPhrase": "Configurable multimedia task-force",
+      "bs": "generate enterprise e-tailers"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Nicholas Runolfsdottir V",
+    "username": "Maxime_Nienow",
+    "email": "Sherwood@rosamond.me",
+    "address": {
+      "street": "Ellsworth Summit",
+      "suite": "Suite 729",
+      "city": "Aliyaview",
+      "zipcode": "45169",
+      "geo": {
+        "lat": "-14.3990",
+        "lng": "-120.7677"
+      }
+    },
+    "phone": "586.493.6943 x140",
+    "website": "jacynthe.com",
+    "company": {
+      "name": "Abernathy Group",
+      "catchPhrase": "Implemented secondary concept",
+      "bs": "e-enable extensible e-tailers"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Glenna Reichert",
+    "username": "Delphine",
+    "email": "Chaim_McDermott@dana.io",
+    "address": {
+      "street": "Dayna Park",
+      "suite": "Suite 449",
+      "city": "Bartholomebury",
+      "zipcode": "76495-3109",
+      "geo": {
+        "lat": "24.6463",
+        "lng": "-168.8889"
+      }
+    },
+    "phone": "(775)976-6794 x41206",
+    "website": "conrad.com",
+    "company": {
+      "name": "Yost and Sons",
+      "catchPhrase": "Switchable contextually-based project",
+      "bs": "aggregate real-time technologies"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Clementina DuBuque",
+    "username": "Moriah.Stanton",
+    "email": "Rey.Padberg@karina.biz",
+    "address": {
+      "street": "Kattie Turnpike",
+      "suite": "Suite 198",
+      "city": "Lebsackbury",
+      "zipcode": "31428-2261",
+      "geo": {
+        "lat": "-38.2386",
+        "lng": "57.2232"
+      }
+    },
+    "phone": "024-648-3804",
+    "website": "ambrose.net",
+    "company": {
+      "name": "Hoeger LLC",
+      "catchPhrase": "Centralized empowering task-force",
+      "bs": "target end-to-end models"
+    }
+  }
+]
+16:14:14.458 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 > GET https://jsonplaceholder.typicode.com/users/1
+2 > Host: jsonplaceholder.typicode.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+2 > Accept-Encoding: gzip,deflate
+
+
+16:14:14.512 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 54
+2 < 200
+2 < Date: Mon, 15 Aug 2022 21:14:14 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < X-Ratelimit-Limit: 1000
+2 < X-Ratelimit-Remaining: 999
+2 < X-Ratelimit-Reset: 1660266577
+2 < Vary: Origin, Accept-Encoding
+2 < Access-Control-Allow-Credentials: true
+2 < Cache-Control: max-age=43200
+2 < Pragma: no-cache
+2 < Expires: -1
+2 < X-Content-Type-Options: nosniff
+2 < Etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+2 < Via: 1.1 vegur
+2 < CF-Cache-Status: HIT
+2 < Age: 13784
+2 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=TEz%2BLuVZMWMOJI1dDSmb9wJX%2ByGhRY6yyb5rPeob%2FLsyEZyROOE4aeJ2WtOtQDwpUiRhgQ9rsClLcGcp6gL6atz4HvlsttdaNRVFuzDNipVcEvGtUcbSV7vb97DLKZ%2BtbirrBPNcO9V4F1GltOrD"}],"group":"cf-nel","max_age":604800}
+2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < CF-RAY: 73b4f0513da39519-LIM
+2 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+}
+16:14:14.619 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 384
+1 < 201
+1 < Date: Mon, 15 Aug 2022 21:14:14 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 216
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 999
+1 < X-Ratelimit-Reset: 1660598091
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: no-cache
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < Access-Control-Expose-Headers: Location
+1 < Location: http://jsonplaceholder.typicode.com/users/11
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"d8-pYV7+YuMGP2hxHPU9ARrf97ifDA"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=vfJlT5f8gAc2%2BKiFtWwRpbah59b5IpPsRIFqgKYtG%2Fn9SjTJEC6HVEISILHrNR4I9xuQQAa43AFTNwJhACz4GOMFicOiirUJ4jRV%2BIQkBpITxlChHrIpb3GFzcY11bWin%2BIV%2BRgFYUd%2FMmQ089pR"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 73b4f050ba74953d-LIM
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{
+  "name": "Test User",
+  "username": "testuser",
+  "email": "test@user.com",
+  "address": {
+    "street": "Has No Name",
+    "suite": "Apt. 123",
+    "city": "Electri",
+    "zipcode": "54321-6789"
+  },
+  "id": 11
+}
+16:14:14.622 [pool-1-thread-2] INFO  com.intuit.karate - [print] created id is:  11 
+16:14:14.894 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:examples/users/users.feature
+17:10:00.091 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:10:00.094 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1660601400094
+17:10:01.276 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+17:10:01.841 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://trello.com/1/boards?name=CreateFromKarate
+1 > Host: trello.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:10:02.739 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 880
+1 < 401
+1 < X-Dns-Prefetch-Control: off
+1 < X-Frame-Options: DENY
+1 < X-Download-Options: noopen
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Surrogate-Control: no-store
+1 < Cache-Control: no-store, no-cache, must-revalidate, proxy-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Trello-Version: 1.148188.0
+1 < X-Trello-Environment: Production
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, PUT, POST, DELETE
+1 < Access-Control-Allow-Headers: Authorization, Accept, Content-Type
+1 < Access-Control-Expose-Headers: x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining
+1 < Content-Type: text/plain; charset=utf-8
+1 < Content-Length: 11
+1 < Date: Mon, 15 Aug 2022 22:10:02 GMT
+1 < X-Envoy-Upstream-Service-Time: 9
+1 < Expect-Ct: report-uri="https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge", max-age=86400
+1 < Strict-Transport-Security: max-age=63072000; preload
+1 < X-Content-Type-Options: nosniff
+1 < X-Xss-Protection: 1; mode=block
+1 < Atl-Traceid: 7d65a644f18d3eb4
+1 < Report-To: {"group": "endpoint-1", "max_age": 600, "endpoints": [{"url": "https://dz8aopenkvv6s.cloudfront.net"}], "include_subdomains": true}
+1 < Nel: {"report_to": "endpoint-1", "max_age": 600, "include_subdomains": true, "failure_fraction": 0.001}
+1 < Server: globaledge-envoy
+invalid key
+17:10:02.761 [pool-1-thread-1] ERROR com.intuit.karate - classpath:trello/boards.feature:7
+Then status 200
+status code was: 401, expected: 200, response time in milliseconds: 880, url: https://trello.com/1/boards?name=CreateFromKarate, response: 
+invalid key
+classpath:trello/boards.feature:7
+17:10:05.232 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:trello/boards.feature
+17:18:50.264 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:18:50.268 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1660601930267
+17:18:51.546 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+17:18:52.095 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://trello.com/1/boards?name=CreateFromKarate&key=9703df553c88b14f74028616d60574bb&token=8d10c47fdb7aa7cb51c4b349992aab4069ed92c1fc29a257489aa58e781a32ca
+1 > Host: trello.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:18:55.986 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 3847
+1 < 200
+1 < X-Dns-Prefetch-Control: off
+1 < X-Frame-Options: DENY
+1 < X-Download-Options: noopen
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Surrogate-Control: no-store
+1 < Cache-Control: max-age=0, must-revalidate, no-cache, no-store
+1 < Pragma: no-cache
+1 < Expires: Thu, 01 Jan 1970 00:00:00
+1 < X-Trello-Version: 1.148188.0
+1 < X-Trello-Environment: Production
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, PUT, POST, DELETE
+1 < Access-Control-Allow-Headers: Authorization, Accept, Content-Type
+1 < Access-Control-Expose-Headers: x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining
+1 < X-Rate-Limit-Api-Token-Interval-Ms: 10000
+1 < X-Rate-Limit-Api-Token-Max: 100
+1 < X-Rate-Limit-Api-Token-Remaining: 99
+1 < X-Rate-Limit-Db-Query-Time-Interval-Ms: 600000
+1 < X-Rate-Limit-Db-Query-Time-Max: 7200000
+1 < X-Rate-Limit-Db-Query-Time-Remaining: 7199990
+1 < X-Rate-Limit-Action-Interval-Ms: 3600000
+1 < X-Rate-Limit-Action-Max: 15000
+1 < X-Rate-Limit-Action-Remaining: 14999
+1 < X-Rate-Limit-Api-Key-Interval-Ms: 10000
+1 < X-Rate-Limit-Api-Key-Max: 300
+1 < X-Rate-Limit-Api-Key-Remaining: 299
+1 < X-Rate-Limit-Member-Interval-Ms: 10000
+1 < X-Rate-Limit-Member-Max: 375
+1 < X-Rate-Limit-Member-Remaining: 374
+1 < X-Server-Time: 1660601935982
+1 < X-Trello-Api-Org-Created: true
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 15 Aug 2022 22:18:55 GMT
+1 < X-Envoy-Upstream-Service-Time: 2970
+1 < Expect-Ct: report-uri="https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge", max-age=86400
+1 < Strict-Transport-Security: max-age=63072000; preload
+1 < X-Content-Type-Options: nosniff
+1 < X-Xss-Protection: 1; mode=block
+1 < Atl-Traceid: 74f3267f732944de
+1 < Report-To: {"group": "endpoint-1", "max_age": 600, "endpoints": [{"url": "https://dz8aopenkvv6s.cloudfront.net"}], "include_subdomains": true}
+1 < Nel: {"report_to": "endpoint-1", "max_age": 600, "include_subdomains": true, "failure_fraction": 0.001}
+1 < Server: globaledge-envoy
+1 < Transfer-Encoding: chunked
+1 < Set-Cookie: preAuthProps=s%3A56edc733eea8935de2678264%3AisEnterpriseAdmin%3Dfalse.QP1fq3cIQqOEjiVzICcve2uAKAQDuXN3lwZkHumFhCs; Domain=trello.com
+{"id":"62fac64f882239898226d8bc","name":"CreateFromKarate","desc":"","descData":null,"closed":false,"idOrganization":"62fac64f882239898226d8ab","idEnterprise":null,"pinned":false,"url":"https://trello.com/b/0CWoJfVW/createfromkarate","shortUrl":"https://trello.com/b/0CWoJfVW","prefs":{"permissionLevel":"private","hideVotes":false,"voting":"disabled","comments":"members","invitations":"members","selfJoin":true,"cardCovers":true,"isTemplate":false,"cardAging":"regular","calendarFeedEnabled":false,"hiddenPluginBoardButtons":[],"switcherViews":[{"_id":"62fac64f882239898226d8bd","viewType":"Board","enabled":true},{"_id":"62fac64f882239898226d8be","viewType":"Table","enabled":true},{"_id":"62fac64f882239898226d8bf","viewType":"Calendar","enabled":false},{"_id":"62fac64f882239898226d8c0","viewType":"Dashboard","enabled":false},{"_id":"62fac64f882239898226d8c1","viewType":"Timeline","enabled":false},{"_id":"62fac64f882239898226d8c2","viewType":"Map","enabled":false}],"background":"blue","backgroundColor":"#0079BF","backgroundImage":null,"backgroundImageScaled":null,"backgroundTile":false,"backgroundBrightness":"dark","backgroundBottomColor":"#0079BF","backgroundTopColor":"#0079BF","canBePublic":true,"canBeEnterprise":true,"canBeOrg":true,"canBePrivate":true,"canInvite":true},"labelNames":{"green":"","yellow":"","orange":"","red":"","purple":"","blue":"","sky":"","lime":"","pink":"","black":"","green_dark":"","yellow_dark":"","orange_dark":"","red_dark":"","purple_dark":"","blue_dark":"","sky_dark":"","lime_dark":"","pink_dark":"","black_dark":"","green_light":"","yellow_light":"","orange_light":"","red_light":"","purple_light":"","blue_light":"","sky_light":"","lime_light":"","pink_light":"","black_light":""},"organization":{"id":"62fac64f882239898226d8ab","name":"espaciodetrabajo39902937","displayName":"Espacio de trabajo de Christian Edwin Mujica Molina","memberships":[{"idMember":"56edc733eea8935de2678264","memberType":"admin","unconfirmed":false,"deactivated":false,"id":"62fac64f882239898226d8ad"}]},"limits":{}}
+17:18:58.346 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:trello/boards.feature
+17:30:12.223 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:30:12.226 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1660602612226
+17:30:13.505 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+17:30:14.048 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://trello.com/1/boards?name=CreateFromKarate&key=9703df553c88b14f74028616d60574bb&token=8d10c47fdb7aa7cb51c4b349992aab4069ed92c1fc29a257489aa58e781a32ca
+1 > Host: trello.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:30:15.128 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1045
+1 < 200
+1 < X-Dns-Prefetch-Control: off
+1 < X-Frame-Options: DENY
+1 < X-Download-Options: noopen
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Surrogate-Control: no-store
+1 < Cache-Control: max-age=0, must-revalidate, no-cache, no-store
+1 < Pragma: no-cache
+1 < Expires: Thu, 01 Jan 1970 00:00:00
+1 < X-Trello-Version: 1.148188.0
+1 < X-Trello-Environment: Production
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, PUT, POST, DELETE
+1 < Access-Control-Allow-Headers: Authorization, Accept, Content-Type
+1 < Access-Control-Expose-Headers: x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining
+1 < X-Rate-Limit-Api-Token-Interval-Ms: 10000
+1 < X-Rate-Limit-Api-Token-Max: 100
+1 < X-Rate-Limit-Api-Token-Remaining: 99
+1 < X-Rate-Limit-Db-Query-Time-Interval-Ms: 600000
+1 < X-Rate-Limit-Db-Query-Time-Max: 7200000
+1 < X-Rate-Limit-Db-Query-Time-Remaining: 7199990
+1 < X-Rate-Limit-Action-Interval-Ms: 3600000
+1 < X-Rate-Limit-Action-Max: 15000
+1 < X-Rate-Limit-Action-Remaining: 14999
+1 < X-Rate-Limit-Api-Key-Interval-Ms: 10000
+1 < X-Rate-Limit-Api-Key-Max: 300
+1 < X-Rate-Limit-Api-Key-Remaining: 299
+1 < X-Rate-Limit-Member-Interval-Ms: 10000
+1 < X-Rate-Limit-Member-Max: 375
+1 < X-Rate-Limit-Member-Remaining: 374
+1 < X-Server-Time: 1660602615155
+1 < X-Trello-Api-Org-Selected: true
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 15 Aug 2022 22:30:15 GMT
+1 < X-Envoy-Upstream-Service-Time: 176
+1 < Expect-Ct: report-uri="https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge", max-age=86400
+1 < Strict-Transport-Security: max-age=63072000; preload
+1 < X-Content-Type-Options: nosniff
+1 < X-Xss-Protection: 1; mode=block
+1 < Atl-Traceid: 6c0beaf1548740b5
+1 < Report-To: {"group": "endpoint-1", "max_age": 600, "endpoints": [{"url": "https://dz8aopenkvv6s.cloudfront.net"}], "include_subdomains": true}
+1 < Nel: {"report_to": "endpoint-1", "max_age": 600, "include_subdomains": true, "failure_fraction": 0.001}
+1 < Server: globaledge-envoy
+1 < Transfer-Encoding: chunked
+1 < Set-Cookie: preAuthProps=s%3A56edc733eea8935de2678264%3AisEnterpriseAdmin%3Dfalse.QP1fq3cIQqOEjiVzICcve2uAKAQDuXN3lwZkHumFhCs; Domain=trello.com
+{"id":"62fac8f7d123616743fe9317","name":"CreateFromKarate","desc":"","descData":null,"closed":false,"idOrganization":"62fac64f882239898226d8ab","idEnterprise":null,"pinned":false,"url":"https://trello.com/b/nMMN3Bb4/createfromkarate","shortUrl":"https://trello.com/b/nMMN3Bb4","prefs":{"permissionLevel":"private","hideVotes":false,"voting":"disabled","comments":"members","invitations":"members","selfJoin":true,"cardCovers":true,"isTemplate":false,"cardAging":"regular","calendarFeedEnabled":false,"hiddenPluginBoardButtons":[],"switcherViews":[{"_id":"62fac8f7d123616743fe9318","viewType":"Board","enabled":true},{"_id":"62fac8f7d123616743fe9319","viewType":"Table","enabled":true},{"_id":"62fac8f7d123616743fe931a","viewType":"Calendar","enabled":false},{"_id":"62fac8f7d123616743fe931b","viewType":"Dashboard","enabled":false},{"_id":"62fac8f7d123616743fe931c","viewType":"Timeline","enabled":false},{"_id":"62fac8f7d123616743fe931d","viewType":"Map","enabled":false}],"background":"blue","backgroundColor":"#0079BF","backgroundImage":null,"backgroundImageScaled":null,"backgroundTile":false,"backgroundBrightness":"dark","backgroundBottomColor":"#0079BF","backgroundTopColor":"#0079BF","canBePublic":true,"canBeEnterprise":true,"canBeOrg":true,"canBePrivate":true,"canInvite":true},"labelNames":{"green":"","yellow":"","orange":"","red":"","purple":"","blue":"","sky":"","lime":"","pink":"","black":"","green_dark":"","yellow_dark":"","orange_dark":"","red_dark":"","purple_dark":"","blue_dark":"","sky_dark":"","lime_dark":"","pink_dark":"","black_dark":"","green_light":"","yellow_light":"","orange_light":"","red_light":"","purple_light":"","blue_light":"","sky_light":"","lime_light":"","pink_light":"","black_light":""},"limits":{}}
+17:30:15.223 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 > DELETE https://trello.com/1/boards/62fac8f7d123616743fe9317?key=9703df553c88b14f74028616d60574bb&token=8d10c47fdb7aa7cb51c4b349992aab4069ed92c1fc29a257489aa58e781a32ca
+2 > Cookie: preAuthProps=s%3A56edc733eea8935de2678264%3AisEnterpriseAdmin%3Dfalse.QP1fq3cIQqOEjiVzICcve2uAKAQDuXN3lwZkHumFhCs
+2 > Host: trello.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+2 > Accept-Encoding: gzip,deflate
+
+
+17:30:16.021 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 794
+2 < 200
+2 < X-Dns-Prefetch-Control: off
+2 < X-Frame-Options: DENY
+2 < X-Download-Options: noopen
+2 < X-Permitted-Cross-Domain-Policies: none
+2 < Referrer-Policy: strict-origin-when-cross-origin
+2 < Surrogate-Control: no-store
+2 < Cache-Control: max-age=0, must-revalidate, no-cache, no-store
+2 < Pragma: no-cache
+2 < Expires: Thu, 01 Jan 1970 00:00:00
+2 < X-Trello-Version: 1.148188.0
+2 < X-Trello-Environment: Production
+2 < Access-Control-Allow-Origin: *
+2 < Access-Control-Allow-Methods: GET, PUT, POST, DELETE
+2 < Access-Control-Allow-Headers: Authorization, Accept, Content-Type
+2 < Access-Control-Expose-Headers: x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining
+2 < X-Rate-Limit-Api-Token-Interval-Ms: 10000
+2 < X-Rate-Limit-Api-Token-Max: 100
+2 < X-Rate-Limit-Api-Token-Remaining: 98
+2 < X-Rate-Limit-Db-Query-Time-Interval-Ms: 600000
+2 < X-Rate-Limit-Db-Query-Time-Max: 7200000
+2 < X-Rate-Limit-Db-Query-Time-Remaining: 7199990
+2 < X-Rate-Limit-Action-Interval-Ms: 3600000
+2 < X-Rate-Limit-Action-Max: 15000
+2 < X-Rate-Limit-Action-Remaining: 14999
+2 < X-Rate-Limit-Api-Key-Interval-Ms: 10000
+2 < X-Rate-Limit-Api-Key-Max: 300
+2 < X-Rate-Limit-Api-Key-Remaining: 298
+2 < X-Rate-Limit-Member-Interval-Ms: 10000
+2 < X-Rate-Limit-Member-Max: 375
+2 < X-Rate-Limit-Member-Remaining: 372
+2 < X-Server-Time: 1660602616100
+2 < Content-Type: application/json; charset=utf-8
+2 < Date: Mon, 15 Aug 2022 22:30:16 GMT
+2 < X-Envoy-Upstream-Service-Time: 297
+2 < Expect-Ct: report-uri="https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge", max-age=86400
+2 < Strict-Transport-Security: max-age=63072000; preload
+2 < X-Content-Type-Options: nosniff
+2 < X-Xss-Protection: 1; mode=block
+2 < Atl-Traceid: eab17c54c14010e9
+2 < Report-To: {"group": "endpoint-1", "max_age": 600, "endpoints": [{"url": "https://dz8aopenkvv6s.cloudfront.net"}], "include_subdomains": true}
+2 < Nel: {"report_to": "endpoint-1", "max_age": 600, "include_subdomains": true, "failure_fraction": 0.001}
+2 < Server: globaledge-envoy
+2 < Transfer-Encoding: chunked
+2 < Set-Cookie: preAuthProps=s%3A56edc733eea8935de2678264%3AisEnterpriseAdmin%3Dfalse.QP1fq3cIQqOEjiVzICcve2uAKAQDuXN3lwZkHumFhCs; Domain=trello.com
+{"_value":null}
+
+17:30:18.732 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:trello/boards.feature
